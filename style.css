@@ -1,0 +1,47 @@
+body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Montserrat', sans-serif;
+    background-image: linear-gradient(to top, #d1cfe2, #c5c6dd, #b8bdd8, #abb5d3, #9cadce);
+}
+
+.first {
+    color: #6efafb;
+}
+
+.second {
+    color: #f7e8a4;
+}
+
+.third {
+    color: #baffdf;
+}
+
+section {
+    padding: 10%;
+    color: white;
+    font-size: 1.5rem;
+    background-color: rgba(0, 0, 0, 0.07);
+}
+.title {
+    position: relative;
+    text-transform: uppercase;
+}
+
+.title::after{
+    content: "";
+    width: 1px;
+    height: 4%;
+    border-right: 2px solid white;
+    animation: blink 0.9s infinite ease;
+}
+
+@keyframes blink {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
