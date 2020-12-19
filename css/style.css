@@ -6,6 +6,8 @@ body {
     background-image: linear-gradient(to top, #d1cfe2, #c5c6dd, #b8bdd8, #abb5d3, #9cadce);
 }
 
+
+
 .first {
     color: #6efafb;
 }
@@ -19,11 +21,14 @@ body {
 }
 
 section {
-    padding: 10%;
+    width: 100%;
+    padding: 10% 10% 10% 10%;
     color: white;
     font-size: 1.5rem;
     background-color: rgba(0, 0, 0, 0.07);
+    min-height: 100vh;
 }
+
 .title {
     position: relative;
     text-transform: uppercase;
@@ -43,5 +48,38 @@ section {
     }
     100% {
         opacity: 1;
+    }
+}
+
+#particles-js {
+    position: fixed;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    background: transparent;
+}
+
+.diane-and-bojack-small {
+    position: relative;
+    width: 130%;
+    left: -15%;
+    margin-bottom: -50px;;
+}
+
+@media (min-width: 450px) {
+    section {
+        width: auto;
+        font-size: 3rem;
+    }
+
+    .diane-and-bojack-small {
+        display: none;
+    }
+}
+
+@media (min-width: 1080px) {
+    section {
+        font-size: 4rem;
     }
 }
