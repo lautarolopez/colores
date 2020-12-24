@@ -1,85 +1,95 @@
 body {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    font-family: 'Montserrat', sans-serif;
-    background-image: linear-gradient(to top, #d1cfe2, #c5c6dd, #b8bdd8, #abb5d3, #9cadce);
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Montserrat", sans-serif;
+  background-image: linear-gradient(
+    to top,
+    #d1cfe2,
+    #c5c6dd,
+    #b8bdd8,
+    #abb5d3,
+    #9cadce
+  );
 }
 
-
-
 .first {
-    color: #6efafb;
+  color: #6efafb;
 }
 
 .second {
-    color: #f7e8a4;
+  color: #f7e8a4;
 }
 
 .third {
-    color: #baffdf;
+  color: #baffdf;
 }
 
 section {
-    width: 100%;
-    padding: 10% 10% 10% 10%;
-    color: white;
-    font-size: 1.5rem;
-    background-color: rgba(0, 0, 0, 0.07);
-    min-height: 100vh;
+  width: 100%;
+  padding: 10% 0 10% 0;
+  color: white;
+  font-size: 1.5rem;
+  background-color: rgba(0, 0, 0, 0.07);
+  min-height: 100vh;
+}
+
+section p {
+  padding-right: 10%;
+  padding-left: 10%;
 }
 
 .title {
-    position: relative;
-    text-transform: uppercase;
+  text-transform: uppercase;
+  padding-left: 10%;
 }
 
-.title::after{
-    content: "";
-    width: 1px;
-    height: 4%;
-    border-right: 2px solid white;
-    animation: blink 0.9s infinite ease;
+.title::after {
+  content: "";
+  width: 1px;
+  height: 4%;
+  border-right: 2px solid white;
+  animation: blink 0.9s infinite ease;
 }
 
 @keyframes blink {
-    0% {
-        opacity: 0;
-    }
-    100% {
-        opacity: 1;
-    }
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
 }
 
 #particles-js {
-    position: fixed;
-    top: 0;
-    left: 0;
-    bottom: 0;
-    right: 0;
-    background: transparent;
+  position: fixed;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  background: transparent;
 }
 
 .diane-and-bojack-small {
-    position: relative;
-    width: 130%;
-    left: -15%;
-    margin-bottom: -50px;;
+  position: relative;
+  width: 100%;
+  left: 0;
+  bottom: -50px;
 }
 
 @media (min-width: 450px) {
-    section {
-        width: auto;
-        font-size: 3rem;
-    }
+  section {
+    width: auto;
+    font-size: 3rem;
+  }
 
-    .diane-and-bojack-small {
-        display: none;
-    }
+  .diane-and-bojack-small {
+    display: none;
+  }
 }
 
 @media (min-width: 1080px) {
-    section {
-        font-size: 4rem;
-    }
+  section {
+    font-size: 4rem;
+  }
 }
